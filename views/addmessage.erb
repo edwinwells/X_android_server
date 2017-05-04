@@ -1,0 +1,17 @@
+<a href="/">Home</a>
+<form method="post" action="sendmessage">
+
+Target Recipient
+<select name="recipient">
+	<option value="" selected disabled>
+	<% mentorlist.each do |contact| %>
+	<option value="<%= contact["email"] %>"><%= contact["email"] %></option>
+<% end %>
+</select>
+Message <input type="text" name="message">
+
+<p>Sender Name <input type="text" name="sendername"></p>
+<p class="comment">Note: Sender name is an option.  This field currently displays on notification Title bar (ex: MinedMinds: sender).  In theory, this should not be free text but sender should be recorded from logged on user.</p>
+
+<input type="submit" name="submit" value="Send">
+</form>

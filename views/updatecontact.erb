@@ -1,0 +1,31 @@
+<a href="/">Home</a>
+
+<h3>All fields need reentered to retain data.</h3>
+<form method="post" action="update_contact">
+<table>
+	<tr>
+		<td class="entryheading" colspan="2">Enter New Details</td>
+	<tr>
+		<td>Full Name</td>
+		<td><input type="text" name="full_name"><%= contact["full_name"] %></td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td><input type="text" name="email"><%= contact["email"] %></td>
+	</tr>
+	<tr>
+		<td>Mentor</td>
+		<td><input type="radio" name="mentor" value="true">True |<input type="radio" name="mentor" value="false">False   |  <%= contact["mentor"] %></td>
+	</tr>
+	<tr>
+		<td>Mentee</td>
+		<td><input type="radio" name="mentee" value="true">True |<input type="radio" name="mentee" value="false">False   |  <%= contact["mentor"] %></td>
+	</tr>
+	<tr>
+		<td>Device Type</td>
+		<td><input type="text" name="device_type"><%= contact["device_type"] %></td>
+	</tr>
+	
+</table>
+<input type="submit" name="submit">
+</form>

@@ -1,0 +1,32 @@
+<a href="/">Home</a>
+<h2>Notifications Status</h2> 
+<table>
+	<thead>
+		<tr>
+			<th>Sender</th>
+			<th>Recipient</th>
+			<th>Group Recipient</th>
+			<th>Message</th>
+			<th>MessageID</th>
+			<th>MessageStatus</th>
+			<th>Timestamp</th>
+			<th>Multicast ID</th>
+			<th>Canonical ID</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% messagelist.each do |message| %>
+		<tr>
+			<td><%= message['sendername'] %></td>
+			<td><%= message['recipient'] %></td>
+			<td><%= message['device_owner'] %></td>
+			<td><%= message['message'] %></td>
+			<td><%= message['messageid'] %></td>
+			<td><%= message['messagestatus'] %></td>
+			<td><%= message['timestamp'] %></td>
+			<td><%= message['multicast_id'] %></td>
+			<td><%= message['canonical_id'] %></td>
+		<% end %>
+		</tr>
+	</tbody>
+</table>

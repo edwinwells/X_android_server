@@ -1,0 +1,93 @@
+html {
+	font-family: Tahoma, serif;
+}
+
+.navbar {
+	border-bottom: 1em solid #1D297B;   /*dark blue shade */
+	border-style: solid;
+	border-color: #1D297B;
+	border-width: 0 0 5px;
+	padding-bottom: 30px;
+}
+
+span {
+	font-weight: bold;
+	font-size: 2.5em;
+	color: #63C5AE;
+}
+
+
+a:active {
+	color: #1D297B;
+}
+
+a:visited {
+	color: #6768A1;
+}
+
+img {
+	vertical-align: middle;
+}
+
+body {
+	color: #1D297B;
+	opacity: 0.90;
+	background-color: #FEFDFD;
+	background-image: url(/images/mm.jpg);
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.comment {
+	font-size: 1em;
+	color: #63C5AE;
+}
+
+table {
+	border-color: #6768A1;        /*blue-purple shade */
+	background-color: #F0FFF0;
+	color: #000000;
+	border: 2px solid;
+	opacity: 0.9;
+	padding-top: 20px;
+}
+
+thead {
+	background-color: #63C5AE;    /* green shade */
+	padding: 10px;
+}
+
+tr:nth-child(even) {
+	background-color: #63C5AE;
+}
+
+th, td {
+	border: 1px solid;
+	padding: 10px;
+}
+
+ul {
+	list-style-type: square;
+}
+
+li {
+	padding: 10px;
+}
+
+.entryheading {
+	text-align: center;
+	font-weight: bold;
+}
+
+form {
+	padding-top: 30px;
+	font-size: 1.5em;
+}
+
+input[type="submit"] {
+	padding: 5px 50px 5px 50px;
+	margin-left: 50px;
+}
+

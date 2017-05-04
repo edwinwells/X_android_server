@@ -1,0 +1,33 @@
+<a href="/">Home</a>
+
+<h3>Click on email link to modify record</h3>
+<table>
+	<thead>
+		<tr>
+			<th>Full Name</th>
+			<th>Email</th>
+			<th>Mentor</th>
+			<th>Mentee</th>
+			<th>FCM ID</th>
+			<th>Device_type</th>
+			<th>PNE Status</th>
+		</tr>
+	</thead>
+	<tbody>
+
+		<% mentorlist.each do |contact| %>
+		<tr>
+			<% email = contact['email'] %>
+			<% url = "/update_contact?email=" + email %>
+			<td><%= contact['full_name'] %></td>
+			<td><a href="<%= url %>"><%= contact['email'] %></td>
+			<td><%= contact['mentor'] %></td>
+			<td><%= contact['mentee'] %></td>
+			<td><%= contact['fcm_id'] %></td>
+			<td><%= contact['device_type'] %></td>
+			<td><%= contact['pne_status'] %></td>
+
+		<% end %>
+		</tr>
+	</tbody>
+</table>
