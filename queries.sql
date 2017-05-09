@@ -23,14 +23,11 @@ ALTER TABLE public.messages
     OWNER to mentormenteeapp;
 
 -- Table: public.accounts
-
--- DROP TABLE public.accounts;
-
-
-
+--DROP TABLE public.accounts;
 
 CREATE TABLE public.accounts
 (
+    ID bigserial NOT NULL,
     full_name text COLLATE pg_catalog."default",
     email text COLLATE pg_catalog."default" NOT NULL,
     mentor boolean,
@@ -38,7 +35,7 @@ CREATE TABLE public.accounts
     fcm_id text COLLATE pg_catalog."default",
     pne_status text COLLATE pg_catalog."default",
     device_type text COLLATE pg_catalog."default",
-    CONSTRAINT email PRIMARY KEY (email)
+    CONSTRAINT id PRIMARY KEY (id)
 )
 WITH (
     OIDS = FALSE
@@ -46,6 +43,4 @@ WITH (
 TABLESPACE pg_default;
 
 ALTER TABLE public.accounts
-    OWNER to mentormenteeapp;
-
-
+    OWNER to mentormenteeapp;   
